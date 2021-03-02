@@ -1,20 +1,23 @@
 import React from "react";
 import "./Header.css";
-
+import {Avatar} from "@material-ui/core";
+import AccesTimeIcon from "@material-ui/icons/AccessTime";
+import SearchIcon from "@material-ui/icons/Search";
+import HelpIcon from "@material-ui/icons/HelpOutline";
 function Header() {
     return(
         <div className="header">
             
             <div className="header_left" >
-                {/* Avatar for logged in user */}
-                {/* Time icon */}
+                <Avatar className="header_avatar" alt="Ali Ashraf" src="" />
+                <AccesTimeIcon/>
             </div>
             <div className="header_search" >
-                {/* Search icon */}
-                {/* Input */}
+                <SearchIcon/>
+                <input placeholder="Search" />
             </div>
             <div className="header_right" >
-                {/* help icon*/}
+                <HelpIcon/>
             </div>
 
         </div>
