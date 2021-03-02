@@ -5,7 +5,7 @@ import Header from "./Header.js"
 function App() {
   return (
    <div className="App">
-     <h1>Lets build Slack Clone </h1>
+     <h1>Slack Clone in development </h1>
 
      {/* Header */}
      <Header/>
