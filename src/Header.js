@@ -14,7 +14,7 @@ function Header() {
             </div>
             <div className="header_search" >
                 <SearchIcon/>
-                <input placeholder="Search" />
+                <input placeholder="Search MigraCode Barcelona" />
             </div>
             <div className="header_right" >
                 <HelpIcon/>
