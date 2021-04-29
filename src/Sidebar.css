@@ -5,6 +5,12 @@
     max-width: 260px;
 }
 
+.break-line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #49274b;
+}
+
 .sidebar_header {
     display: flex;
     border-bottom: 1px solid #49274b;
@@ -43,3 +49,4 @@
     margin-top: 1px;
     margin-right: 2px;
 }
+
