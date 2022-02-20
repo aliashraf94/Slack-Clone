@@ -1,21 +1,18 @@
-import firebase from "firebase";
+import { initializeApp } from "firebase/app"
+import { getFirestore } from "firebase/firestore"
 require('dotenv').config()
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: process.env.apiKey,
-    authDomain: process.env.authDomain,
-    projectId: process.env.projectId,
-    storageBucket: process.env.storageBucket,
-    messagingSenderId: process.env.messagingSenderId,
-    appId: process.env.appId,
-    measurementId: process.env.measurementId
+
+
+  const firebaseConfig = {
+    apiKey:  "AIzaSyDYrzCQspYqcczr9T019ANTcapkt0-xr9Q",
+    authDomain: "slack-clone-57130.firebaseapp.com",
+    projectId: "slack-clone-57130",
+    storageBucket: "slack-clone-57130.appspot.com",
+    messagingSenderId: "66053058103",
+    appId: "1:66053058103:web:46ff7c1bf7575b1dea99b2"
   };
 
-// connecting our frontend to our firbase database
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-const provider = new firebase.auth.GoogleAuthProvider();
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
 
-export { auth , provider };
 export default db ;
